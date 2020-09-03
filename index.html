@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="default.css">
+
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 
@@ -33,21 +35,29 @@
 				</div>
 
 				<div class="left-column">
-					<img id="profile-pic" src="images/img1.jpg">
+					<img id="profile-pic" src="img1.jpg">
 					<h5 style="text-align: center;line-height: 0">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
-						<div id="light-mode" class="theme-dot"></div>
-						<div id="blue-mode" class="theme-dot"></div>
-						<div id="green-mode" class="theme-dot"></div>
-						<div id="purple-mode" class="theme-dot"></div>
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 					</div>
 
 					<p id="settings-note">*Theme settings will be saved for<br>your next visit.</p>
 				</div>
 
 				<div class="right-column">
-					Right Column
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h2>A BHARAT PETROLIUM<br>OUTLET</h2>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,21 +65,56 @@
 
 	<section class="s2">
 		<div class="main-container">
-			About
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>About</h4>
+					<p>Sri Ram Fuels was inagurated on 4th May, 2014. Since then, It has been providing great fuel and excellent costumer service. Sri Ram Fuels is located in Patel Nagar, Patna-800013. It has been designed to serve as many people as possible with great effeciency.</p>
+					<p>It has all the essensial amenities such as - Public Toilets, Free Air etc. It provides us with top-notch Petrol, Desiel and A BPCL high performance lubricant - Speed.</p>
+				</div>
+
+				<hr>
+
+				<div class="about-Owner">
+					<h4>About The Owner</h4>
+
+					<p>Hey! I am Akshay Singh, The owner of Sri Ram Fuels. If you want to contact me, you can call me on - +91 9430512464, or e-mail me on 'fuelssriram@gmail.com'.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="s1">
 		<div class="main-container">
-			Portfolio
+			<h3 style="text-align: center;">Rates</h3>
+			<h4 style="text-align: center;">Petrol: Rs. </h4>
+			<h4 style="text-align: center;">Diesel: Rs. </h4>
+			<h4 style="text-align: center;">Speed: Rs. </h4>
 		</div>
 	</section>
 
 		<section class="s2">
 		<div class="main-container">
-			Contact
+			<h3 style="text-align: center;">For Any Queries, Complaints etc. :</h3>
+
+			<form id="contact-form">
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>E-mail</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+				
+				<input id="submit-btn" type="submit" name="Send">
+			</form>
 		</div>
 	</section>
+
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
